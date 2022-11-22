@@ -1,0 +1,39 @@
+body{
+    box-sizing: content-box;
+    position: relative;
+    background-color: rgba(166, 214, 104, 0.288);
+    
+
+}
+
+div#parent{
+    position: absolute;
+    display: block;
+    height: 1900px;
+    width: 290px;
+    border: 1px black;
+    border-style: solid;
+    border-radius: 15px 15px 10px 10px;
+    overflow: hidden;
+    text-align: center;
+    color: rgb(150, 150, 100);
+    
+}
+div.div1{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 300px;
+    width: 1000px;
+    border: 1px black;
+    border-style: solid;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 300px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.anagrafica{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+
+}
