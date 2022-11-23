@@ -1,12 +1,17 @@
 body{
     box-sizing: content-box;
     position: relative;
-    background-color: rgba(166, 214, 104, 0.288);
+    background-color: white;
     
 
 }
+hr{
+    padding: 10px 0px 0px 10px;
+    border: 2px rgb(255, 157, 77);
+    border-style: dashed;
+}
 
-div#parent{
+div#div0{
     position: absolute;
     display: block;
     height: 1900px;
@@ -17,23 +22,65 @@ div#parent{
     overflow: hidden;
     text-align: center;
     color: rgb(150, 150, 100);
+
+    
     
 }
 div.div1{
     position: relative;
-    display: block;
+    display: inline-block;
     overflow: hidden;
-    height: 300px;
-    width: 1000px;
+    height: 1900px;
+    width: 300px;
     border: 1px black;
     border-style: solid;
     border-radius: 5px 5px 5px 5px;
     margin-left: 300px;
     margin-bottom: 10px;
-    text-align: center;
-}
-.anagrafica{
-    color: black;
+    text-align: auto;
+    font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
 
+
+}
+div.div1-1{
+   
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1mm rgb(76, 0, 255);
+    border-bottom-style: groove;
+    margin: 5px 5px 5px 5px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    width: auto;
+    
+
+}
+div.div2{
+   
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 1900px;
+    width: 1000px;
+    border: 1px black;
+    border-style: solid;
+    border-radius: 5px 5px 5px 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+div.info{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    font-family: 'Times New Roman', Times, serif;
 }
