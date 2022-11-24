@@ -83,3 +83,10 @@ div#rightLong{
     padding: 5px 5px 5px 5px;
     bottom: 0.4%;
 }
+
+code.codice{
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(252, 143, 54);
+
+}
