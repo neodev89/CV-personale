@@ -63,32 +63,27 @@
 
     </div>
     <div class="divInfo">
-        <p class="paragr"> 
-        
-        </p>
-        <input type="button" value="Inserire il testo" onclick="addMe()">
-        <button type="reset" onclick="reset()">Canc</button>
+        <sup>1</sup> <p class="paragr"></p>
+        <button type="button" onclick="addMe()">Aggiungi testo</button>
+        <button type="button" onclick="Canc()">Canc</button>
     </div>
     <div class="divInfo">
-        <p class="paragr"><sup>2</sup><br>
-        Breve ma intensa esperienza formativa che mi ha permesso d'intraprendere il percorso di Apprendistato contabile presso<br>
+        <sup>2</sup> <p class="paragr">Breve ma intensa esperienza formativa che mi ha permesso d'intraprendere il percorso di Apprendistato contabile presso<br>
         lo Studio Maltese Servizi Srls sito a Modica, mia città natale.
         La formazione durò un anno e sei mesi mentre la mia permanenza nello Studio fu di tre anni e quattro mesi.</p>
     </div>
     <div class="divInfo">
-        <p class="paragr"><sup>3</sup><br>
-         Dallo Studio mi sono licenziato per intraprendere un sogno che avevo lasciato nel cassetto perché lo ritenevo irraggiungibile
+        <sup>3</sup> <p class="paragr">Dallo Studio mi sono licenziato per intraprendere un sogno che avevo lasciato nel cassetto perché lo ritenevo irraggiungibile<br>
          per un <i>"musicante"</i> come me.<br>
-         La partenza è stata, ovviamente, dura ma la mia tenacia e la mia volontà mi stanno permettendo di progredire e migliorare scoprendo in me stesso una passione<br>
-         per questo mondo che mai avrei pensato di avere.<br>
+         La partenza è stata, ovviamente, dura ma la mia tenacia e la mia volontà mi stanno permettendo di progredire e migliorare<br>
+         scoprendo in me stesso una passione per questo mondo che mai avrei pensato di avere.<br>
          Da qui la decisione di creare un Curriculum Vitae personalizzato</p>
-         <input type="button" value="Cambia aspetto" onclick="changeMe()">
-         <button type="button" onclick="goBack()">go back!</button>
+         <button type="button" onclick="ChangeMe()">Cambia colore sfondo</button>
+         <button type="button" onclick="goBack()">Ritorna</button>
           
     </div>
     <div class="divInfo">
-        <p class="paragr"><sup>4</sup><br>
-        A completezza del mio CV accenno brevemente alla piccola esperienza di Agente di Commercio avvenuta<br>
+        <sup>4</sup> <p class="paragr">A completezza del mio CV accenno brevemente alla piccola esperienza di Agente di Commercio avvenuta<br>
         in precedenza (prima dei corsi di contabilità).<br>
         Questo fu il mio primo lavoro a stretto contatto con il pubblico che mi permise di mettere in pratica le mie scolastiche conoscenze<br>
         fino a comprendere come comportarsi in determinate situazioni e a seconda della tipologia del cliente.</p>
@@ -115,30 +110,26 @@
     </div>
     <script>
         function addMe(){
-            let a = "<sup>1</sup></p>" + "L'impronta lasciatami da questo liceo è stata principalmente umanistica. Lo studio della psicologia," + "<br>" + "della sociologia e  della pedagogia mi hanno permesso di sviluppare la capacità di studiare il modo di porsi" + "<br>" +
-            "dinnanzi alle menti umane e riuscira e destreggiarsi al meglio all'interno di gruppi di persone eterogenee.";
-            console.log(a);
+            let a = "L'impronta lasciatami da questo liceo è stata principalmente umanistica. Lo studio della psicologia,"+"<br>"+
+            "della sociologia e  della pedagogia mi hanno permesso di sviluppare la capacità di studiare il modo di porsi"+"<br>"+
+        "dinnanzi alle menti umane e riuscira e destreggiarsi al meglio all'interno di gruppi di persone eterogenee.";
             document.getElementsByClassName("paragr")[0].innerHTML = a;
         }
-        function reset(){
+        function Canc(){
             let a = '';
             document.getElementsByClassName("paragr")[0].innerHTML = a;
         }
 
-        function changeMe(){
+        function ChangeMe(){
             let a = document.getElementsByClassName("divInfo")[2];
-            a.style.backgroundColor = "rgb(119, 136, 53)";
-            a.style.fontFamily = "cursive";
-            a.style.fontSize = "12px";
-            a.style.color = "white";
+            a.style.backgroundColor = "darkgreen";
+            a.style.color = "white"
         }
         function goBack(){
             let a = document.getElementsByClassName("divInfo")[2];
             a.style.backgroundColor = "rgba(255, 255, 255, 0.850)";
-            a.style.fontFamily = "Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif";
-            a.style.color = "black";
+            a.style.color = "rgb(0, 0, 0)";
         }
-
     </script>
 </body>
 </html>

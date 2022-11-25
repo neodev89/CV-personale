@@ -28,22 +28,22 @@ div#Titolo{
 
 }
 @keyframes moove{
-    0% {background-color: rgb(10, 25, 50); color: rgb(255, 255, 255)}
+    0% {background-color: rgb(10, 25, 50);}
     15% {background-color: rgb(25, 50, 100);}
-    20% {background-color: rgb(59, 98, 228);}
-    35% {background-color: rgb(27, 158, 218);}
-    50% {background-color: rgb(20, 200, 146); color: rgb(7, 4, 151)}
-    65% {background-color: rgb(50, 200, 75);}
-    75% {background-color: rgb(118, 200, 10);}
-    85% {background-color: rgb(20, 150, 128);}
-    95% {background-color: rgb(10, 38, 80); color: rgb(255, 255, 255)}
+    20% {background-color: rgb(228, 197, 59);}
+    35% {background-color: rgb(218, 119, 27);}
+    50% {background-color: rgb(200, 77, 20); color: rgb(0, 10, 120)}
+    65% {background-color: rgb(200, 50, 75);}
+    75% {background-color: rgb(200, 10, 100);}
+    85% {background-color: rgb(150, 20, 75);}
+    95% {background-color: rgb(10, 30, 80); color: rgb(150, 20, 75)}
     100% {background-color: rgb(0, 10, 120);}
 }
 
 div#leftLong{
     position: absolute;
     display: block;
-    height: 666px;
+    height: 746px;
     width: 500px;
     border: 1px black;
     background-color: rgba(255, 255, 255, 0.850);
@@ -57,7 +57,7 @@ div#leftLong{
 div.divInfo{
     position: relative;
     display: inline-block;
-    height: 150px;
+    height: 170px;
     width: 925px;
     background-color: rgba(255, 255, 255, 0.850);
     border: 1px black;
@@ -72,7 +72,7 @@ div.divInfo{
 div#rightLong{
     position: absolute;
     display: block;
-    height: 666px;
+    height: 746px;
     width: 400px;
     background-color: rgba(255, 255, 255, 0.850);
     border: 1px black;
@@ -81,13 +81,20 @@ div#rightLong{
     padding: 5px 5px 5px 5px;
     bottom: 0%;
 }
-.rightPara{
-    font-family: cursive;
-    font-size: 15px;
+
+div#rightPara{
+    background-color: rgba(255, 255, 255, 0.850);
 
 }
+
+
+#rightLong{
+
+    font-family: cursive;
+    font-size: 15px;
+    padding: auto;
+}
+
 p.paragr{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 13px;
-    background-color: none;
 }
