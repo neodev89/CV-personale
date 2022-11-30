@@ -107,6 +107,12 @@
                 </ul>
             <hr>
         </p>
+        <p>
+            <ul id="compari">
+
+            </ul>
+            <button type="button" onclick="Click()">Cliccami</button>
+        </p>
     </div>
     <script>
         function addMe(){
@@ -130,6 +136,22 @@
             a.style.backgroundColor = "rgba(255, 255, 255, 0.850)";
             a.style.color = "rgb(0, 0, 0)";
         }
+
+        setTimeout(function Click(){
+            const Ul = document.getElementById("compari");
+            const fragment = new DocumentFragment();
+            const skills = ["Curioso;", "Ambizioso;", "Caparbio"];
+            for(const skill of skills){
+                let LI = document.createElement("li");
+                LI.textContent = skill;
+                fragment.append(LI);
+            }
+            Ul.append(fragment);
+        }, 5000);
+        setTimeout(function duopo(){
+            let text = document.getElementsByClassName("rightPara")[1];
+            text.style.display = "visible";
+        }, 5000);
     </script>
 </body>
 </html>
