@@ -89,30 +89,15 @@
         fino a comprendere come comportarsi in determinate situazioni e a seconda della tipologia del cliente.</p>
     </div>
     <div id="rightLong">
-        <p class="rightPara">
+        <p id="inter" class="rightPara">
             <b>Le mie passioni</b>
                 <ul class="rightPara">
-                    <li>Appassionato di teatro, in particolare del teatro dialettale modicano<br>
-                        nel quale mi sono messo in gioco per quattro anni.
-                    </li>
-                    <li>
-                        Da oltre quindici anni agricoltore innamorato del biologico inteso come<br>
-                        sistema di equilibrio tra la natura e l'uomo.
-                    </li>
-                    <li>
-                        Attratto dall'astronomia, dalla poesia. Compositore di musica colta e, ogni tanto,<br>
-                        corista.
-                    </li>
+                   
                     
                 </ul>
             <hr>
         </p>
-        <p>
-            <ul id="compari">
-
-            </ul>
-            <button type="button" onclick="Click()">Cliccami</button>
-        </p>
+        
     </div>
     <script>
         function addMe(){
@@ -138,6 +123,7 @@
         }
 
         setTimeout(function Click(){
+           
             const Ul = document.getElementById("compari");
             const fragment = new DocumentFragment();
             const skills = ["Curioso;", "Ambizioso;", "Caparbio"];
@@ -147,11 +133,27 @@
                 fragment.append(LI);
             }
             Ul.append(fragment);
+
         }, 5000);
-        setTimeout(function duopo(){
-            let text = document.getElementsByClassName("rightPara")[1];
-            text.style.display = "visible";
-        }, 5000);
-    </script>
+        
+        setInterval(function passion(){
+            const lista = ["Appassionato di teatro, in particolare del teatro dialettale modicano nel quale mi sono messo in gioco per quattro anni.", "Da oltre quindici anni agricoltore innamorato del biologico inteso come sistema di equilibrio tra la natura e l'uomo.", "Attratto dall'astronomia, dalla poesia. Compositore di musica colta e, ogni tanto, corista."];
+            const para = document.getElementById("inter");
+            const UL = document.querySelector(".rightPara");
+            const fragment = new DocumentFragment();
+            for(const pezzo of lista){
+                let LI = document.createElement("li");
+                LI.textContent = pezzo;
+                fragment.append(LI);
+            }
+            UL.append(fragment);
+            para.append(UL);
+        }, 12000);
+
+        setInterval(function canc(){
+            let UL = document.querySelector(".rightPara");
+            UL.textContent = '';
+        }, 18000)
+    </script>           
 </body>
 </html>
