@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,8 +96,15 @@
                    
                     
                 </ul>
-            <hr>
+          
         </p>
+        <hr>
+        <div>
+            <button type="button" onclick="play()">
+                Play with me!
+            </button>
+
+        </div>
         
     </div>
     <script>
@@ -122,23 +130,22 @@
             a.style.color = "rgb(0, 0, 0)";
         }
 
-        setTimeout(function Click(){
-           
+       /* function Click(){
+            const skills = ["Curioso;", "Ambizioso;", "Caparbio"];
             const Ul = document.getElementById("compari");
             const fragment = new DocumentFragment();
-            const skills = ["Curioso;", "Ambizioso;", "Caparbio"];
             for(const skill of skills){
                 let LI = document.createElement("li");
                 LI.textContent = skill;
                 fragment.append(LI);
             }
             Ul.append(fragment);
-
-        }, 5000);
+            document.getElementById("add").innerHTML = Ul.textContent;
+        }
+        */
         
         setInterval(function passion(){
             const lista = ["Appassionato di teatro, in particolare del teatro dialettale modicano nel quale mi sono messo in gioco per quattro anni.", "Da oltre quindici anni agricoltore innamorato del biologico inteso come sistema di equilibrio tra la natura e l'uomo.", "Attratto dall'astronomia, dalla poesia. Compositore di musica colta e, ogni tanto, corista."];
-            const para = document.getElementById("inter");
             const UL = document.querySelector(".rightPara");
             const fragment = new DocumentFragment();
             for(const pezzo of lista){
@@ -147,13 +154,23 @@
                 fragment.append(LI);
             }
             UL.append(fragment);
-            para.append(UL);
+            
         }, 12000);
 
         setInterval(function canc(){
             let UL = document.querySelector(".rightPara");
             UL.textContent = '';
-        }, 18000)
+        }, 18000);
+
+        function play(){
+            const RAL = 21500;
+            let RAN = (21500-(21500*0.44).toFixed(2));
+            console.log(RAN);
+            let mensilita = Number(RAN / 12).toFixed(2);
+            console.log(mensilita);
+            
+
+        }
     </script>           
 </body>
 </html>
