@@ -1,0 +1,415 @@
+body{
+    box-sizing: content-box;
+    position: absolute;
+    max-height: 1800px;
+    max-width: 1900px;
+    background-color: rgb(235, 208, 174);
+    background-image: url("Matrix.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    justify-content: left;
+
+}
+hr{
+    padding: 10px 0px 0px 10px;
+    border: 2px rgb(7, 148, 37);
+    background-color: rgba(113, 255, 77, 0.6);
+    border-style: dashed;
+}
+div#Titolo{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    color: red;
+    height: auto;
+    width: 1878px;
+    margin: 10px 5px 10px 5px;
+    animation: 15s moove infinite;
+
+}
+@keyframes moove{
+    0% {background-color: rgb(10, 25, 50);}
+    15% {background-color: rgb(25, 50, 100);}
+    20% {background-color: rgb(228, 197, 59);}
+    35% {background-color: rgb(218, 119, 27);}
+    50% {background-color: rgb(200, 77, 20); color: rgb(0, 10, 120)}
+    65% {background-color: rgb(200, 50, 75);}
+    75% {background-color: rgb(200, 10, 100);}
+    85% {background-color: rgb(150, 20, 75);}
+    95% {background-color: rgb(10, 30, 80); color: rgb(150, 20, 75)}
+    100% {background-color: rgb(0, 10, 120);}
+}
+
+div#leftLong{
+    position: absolute;
+    display: block;
+    height: 746px;
+    width: 500px;
+    border: 1px black;
+    background-color: rgba(255, 255, 255, 0.850);
+    border-style: dashed;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    line-height: 25px;
+  
+}
+
+div.divInfo{
+    position: relative;
+    display: inline-block;
+    height: 170px;
+    width: 925px;
+    background-color: rgba(255, 255, 255, 0.850);
+    border: 1px black;
+    border-style: dashed;
+    margin: 5px 5px 5px 525px;
+    padding: 5px 5px 5px 5px;
+    line-height: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+div#rightLong{
+    position: absolute;
+    display: block;
+    height: 746px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.850);
+    border: 1px black;
+    border-style: dashed;
+    margin: 5px 5px 5px 1470px;
+    padding: 5px 5px 5px 5px;
+    bottom: 0%;
+}
+
+div#rightPara{
+    background-color: rgba(255, 255, 255, 0.850);
+
+}
+
+
+#rightLong{
+
+    font-family: cursive;
+    font-size: 15px;
+    padding: auto;
+}
+
+p.paragr{
+    font-size: 13px;
+}
+button {
+    position: relative;
+}
+
+@media only screen and (min-width: 250px ) and (max-width: 600px){
+    body{
+        box-sizing: content-box;
+        position: absolute;
+        max-height: 600px;
+        max-width: auto;
+        background-color: rgb(235, 208, 174);
+        background-image: url("Matrix.jpg");
+        background-position: center;
+        background-repeat: repeat;
+        justify-content: left;
+    
+    }
+   
+    div#Titolo{
+        position: relative;
+        display: block;
+        text-align: center;
+        color: red;
+        height: auto;
+        width: 335px;
+        margin: 5px 2px 5px 3px;
+        animation: 15s moove infinite;
+    
+    }
+    @keyframes moove{
+        0% {background-color: rgb(10, 25, 50);}
+        15% {background-color: rgb(25, 50, 100);}
+        20% {background-color: rgb(228, 197, 59);}
+        35% {background-color: rgb(218, 119, 27);}
+        50% {background-color: rgb(200, 77, 20); color: rgb(0, 10, 120)}
+        65% {background-color: rgb(200, 50, 75);}
+        75% {background-color: rgb(200, 10, 100);}
+        85% {background-color: rgb(150, 20, 75);}
+        95% {background-color: rgb(10, 30, 80); color: rgb(150, 20, 75)}
+        100% {background-color: rgb(0, 10, 120);}
+    }
+    
+    div#leftLong{
+        position: relative;
+        display: block;
+        height: 446px;
+        width: 325px;
+        border: 1px black;
+        background-color: rgba(255, 255, 255, 0.850);
+        border-style: dashed;
+        margin: 2px 2px 2px 2px;
+        padding: 2px 7px 2px 2px;
+        line-height: 15px;
+       
+      
+    }
+    
+    div.divInfo{
+        position: relative;
+        display: block;
+        height: 170px;
+        width: 325px;
+        background-color: rgba(255, 255, 255, 0.850);
+        border: 1px black;
+        border-style: dashed;
+        margin: 2px 2px 2px 2px;
+        padding: 5px 5px 5px 5px;
+        line-height: 15px;
+        font-family:Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    div#rightLong{
+        position: relative;
+        display: block;
+        height: 246px;
+        width: 325px;
+        background-color: rgba(255, 255, 255, 0.850);
+        border: 1px black;
+        border-style: dashed;
+        margin: 5px 5px 5px 5px;
+        padding: 5px 5px 5px 5px;
+        bottom: 0%;
+    }
+    
+    div#rightPara{
+        background-color: rgba(255, 255, 255, 0.850);
+    
+    }
+    
+    
+    #rightLong{
+    
+        font-family: cursive;
+        font-size: 11px;
+        padding: auto;
+    }
+    
+    p.paragr{
+        font-size: 11px;
+    }
+    button {
+        position: relative;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 800px){
+    body{
+        box-sizing: content-box;
+        position: absolute;
+        max-height: 800px;
+        max-width: auto;
+        background-color: rgb(235, 208, 174);
+        background-image: url("Matrix.jpg");
+        background-position: center;
+        background-repeat: repeat;
+        justify-content: left;
+    
+    }
+   
+    div#Titolo{
+        position: relative;
+        display: block;
+        text-align: center;
+        color: red;
+        height: auto;
+        width: 563px;
+        margin: 5px 2px 5px 3px;
+        animation: 15s moove infinite;
+    
+    }
+    @keyframes moove{
+        0% {background-color: rgb(10, 25, 50);}
+        15% {background-color: rgb(25, 50, 100);}
+        20% {background-color: rgb(228, 197, 59);}
+        35% {background-color: rgb(218, 119, 27);}
+        50% {background-color: rgb(200, 77, 20); color: rgb(0, 10, 120)}
+        65% {background-color: rgb(200, 50, 75);}
+        75% {background-color: rgb(200, 10, 100);}
+        85% {background-color: rgb(150, 20, 75);}
+        95% {background-color: rgb(10, 30, 80); color: rgb(150, 20, 75)}
+        100% {background-color: rgb(0, 10, 120);}
+    }
+    
+    div#leftLong{
+        position: absolute;
+        display: block;
+        height: 646px;
+        width: 220px;
+        border: 1px black;
+        background-color: rgba(255, 255, 255, 0.850);
+        border-style: dashed;
+        margin: 2px 2px 2px 2px;
+        padding: 2px 7px 2px 2px;
+        line-height: 15px;
+       
+      
+    }
+    
+    div.divInfo{
+        position: relative;
+        display: block;
+        height: 210px;
+        width: 320px;
+        background-color: rgba(255, 255, 255, 0.850);
+        border: 1px black;
+        border-style: dashed;
+        margin: 2px 235px;
+        padding: 5px 5px 5px 5px;
+        line-height: 15px;
+        font-family:Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    div#rightLong{
+        position: relative;
+        display: block;
+        height: 346px;
+        width: 200px;
+        background-color: rgba(255, 255, 255, 0.850);
+        border: 1px black;
+        border-style: dashed;
+        margin: 5px 5px 5px 5px;
+        padding: 5px 5px 5px 5px;
+        bottom: 240px;
+        
+    }
+    
+    div#rightPara{
+        background-color: rgba(255, 255, 255, 0.850);
+    
+    }
+    
+    
+    #rightLong{
+    
+        font-family: cursive;
+        font-size: 11px;
+        padding: auto;
+    }
+    
+    p.paragr{
+        font-size: 11px;
+    }
+    button {
+        position: relative;
+       
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+    body{
+        box-sizing: content-box;
+        position: absolute;
+        max-height: 800px;
+        max-width: auto;
+        background-color: rgb(235, 208, 174);
+        background-image: url("Matrix.jpg");
+        background-position: center;
+        background-repeat: repeat;
+        justify-content: left;
+    
+    }
+   
+    div#Titolo{
+        position: relative;
+        display: block;
+        text-align: center;
+        color: red;
+        height: auto;
+        width: 780px;
+        margin: 5px 2px 5px 3px;
+        animation: 15s moove infinite;
+    
+    }
+    @keyframes moove{
+        0% {background-color: rgb(10, 25, 50);}
+        15% {background-color: rgb(25, 50, 100);}
+        20% {background-color: rgb(228, 197, 59);}
+        35% {background-color: rgb(218, 119, 27);}
+        50% {background-color: rgb(200, 77, 20); color: rgb(0, 10, 120)}
+        65% {background-color: rgb(200, 50, 75);}
+        75% {background-color: rgb(200, 10, 100);}
+        85% {background-color: rgb(150, 20, 75);}
+        95% {background-color: rgb(10, 30, 80); color: rgb(150, 20, 75)}
+        100% {background-color: rgb(0, 10, 120);}
+    }
+    
+    div#leftLong{
+        position: absolute;
+        display: block;
+        height: 649px;
+        width: 350px;
+        border: 1px black;
+        background-color: rgba(255, 255, 255, 0.850);
+        border-style: dashed;
+        margin: 2px 2px 2px 2px;
+        padding: 2px 7px 2px 2px;
+        line-height: 15px;
+       
+      
+    }
+    
+    div.divInfo{
+        position: relative;
+        display: block;
+        height: 210px;
+        width: 396px;
+        background-color: rgba(255, 255, 255, 0.850);
+        border: 1px black;
+        border-style: dashed;
+        margin: 2px 2px 2px 375px;
+        padding: 5px 5px 5px 5px;
+        line-height: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    div#rightLong{
+        position: relative;
+        display: block;
+        height: 346px;
+        width: 345px;
+        background-color: rgba(255, 255, 255, 0.850);
+        border: 1px black;
+        border-style: dashed;
+        margin: 5px 5px 5px 5px;
+        padding: 5px 5px 5px 5px;
+        bottom: 240px;
+        
+    }
+    
+    div#rightPara{
+        background-color: rgba(255, 255, 255, 0.850);
+    
+    }
+    
+    
+    #rightLong{
+    
+        font-family: cursive;
+        font-size: 11px;
+        padding: auto;
+    }
+    
+    p.paragr{
+        font-size: 11px;
+    }
+    button {
+        position: relative;
+       
+    }
+}
+
